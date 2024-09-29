@@ -3,6 +3,7 @@ body {
     color: white;
     padding: 30px;
     font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
 }
 
 nav {
@@ -88,13 +89,6 @@ section {
     word-wrap: break-word; 
 }
 
-@media (max-width: 768px) {
-    .skill-box {
-        max-width: 100%; 
-        padding: 20px;   
-    }
-}
-
 .skill-box h3 {
     color: #333;
     margin: 0;
@@ -139,5 +133,3 @@ footer a, footer li {
     list-style-type: none;
     padding: 10px;
 }
-
-

@@ -84,8 +84,7 @@ section {
     margin: 10px;
     flex: 1 1 100%;  
     max-width: 50%;  
-    box-sizing: border-box; 
-    word-wrap: break-word; 
+    box-sizing: border-box;  
 }
 
 .skill-box h3 {

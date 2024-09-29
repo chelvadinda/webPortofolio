@@ -63,10 +63,6 @@ section {
     border-radius: 10%; 
 }
 
-.about-container p {
-    flex: 1;
-}
-
 #skills {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
 }

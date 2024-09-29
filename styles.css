@@ -4,6 +4,8 @@ body {
     padding: 30px;
     font-family: Arial, Helvetica, sans-serif;
     flex-direction: column;
+    max-width: 100%;
+    height: auto;
 }
 
 nav {
@@ -61,7 +63,9 @@ section {
 
 .about-container img {
     margin-left: 20px;
-    border-radius: 10%; 
+    border-radius: 10%;
+    max-width: 100%;
+    height: auto;
 }
 
 .about-container p {
@@ -72,9 +76,10 @@ section {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
 }
 
-.skills-container{
+.skills-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap; 
 }
 
 .skill-box {
@@ -83,8 +88,7 @@ section {
     border-radius: 10px;
     padding: 30px;
     margin: 10px;
-    flex: 1 1 100%;  
-    max-width: 50%;  
+    flex: 1 1 45%;  
     box-sizing: border-box; 
     word-wrap: break-word; 
 }
@@ -107,7 +111,7 @@ aside h3 {
     padding-left: 40px;
 }
 
-aside a, aside li{
+aside a, aside li {
     color: white;
     text-decoration: none;
     list-style-type: none;
@@ -117,7 +121,7 @@ aside a:hover {
     color: #333;
 }
 
-footer{
+footer {
     padding: 40px 0px;
     display: flex;
     font-size: 25px;
@@ -132,4 +136,70 @@ footer a, footer li {
     text-decoration: none;
     list-style-type: none;
     padding: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav h1 {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav a {
+        padding: 10px 20px;
+    }
+
+    header {
+        font-size: 30px;
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    section {
+        padding: 20px 0;
+        font-size: 20px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-container img {
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-box {
+        max-width: 100%;
+        flex: none; 
+    }
+
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        font-size: 20px;
+    }
 }

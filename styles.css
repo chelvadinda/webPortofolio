@@ -1,0 +1,143 @@
+body {
+    background-color: #000000;
+    color: white;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: #111;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    justify-content: space-between;
+}
+
+nav h1 {
+    color: white;
+    padding: 30px;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0px;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 50px;
+}
+
+nav a:hover {
+    background-color: #333;
+}
+
+header {
+    margin-top: 100px;
+    padding: 20px 0px;
+    padding-bottom: 100px;
+    font-size: 40px;
+}
+
+section {
+    padding: 40px 0px;
+    font-size: 25px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+}
+
+.about-container img {
+    margin-left: 20px;
+    border-radius: 10%; 
+}
+
+.about-container p {
+    flex: 1;
+}
+
+#skills {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+}
+
+.skills-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill-box {
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px;
+    flex: 1 1 100%;  
+    max-width: 50%;  
+    box-sizing: border-box; 
+    word-wrap: break-word; 
+}
+
+@media (max-width: 768px) {
+    .skill-box {
+        max-width: 100%; 
+        padding: 20px;   
+    }
+}
+
+.skill-box h3 {
+    color: #333;
+    margin: 0;
+}
+
+.skill-box p {
+    color: #666;                 
+}
+
+aside {
+    padding: 0px 60px;
+    font-size: 20px;
+}
+
+aside h3 {
+    padding-left: 40px;
+}
+
+aside a, aside li{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+aside a:hover {
+    color: #333;
+}
+
+footer{
+    padding: 40px 0px;
+    display: flex;
+    font-size: 25px;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer a, footer li {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px;
+}
+
+

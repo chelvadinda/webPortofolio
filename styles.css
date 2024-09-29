@@ -88,13 +88,6 @@ section {
     word-wrap: break-word; 
 }
 
-@media (max-width: 768px) {
-    .skill-box {
-        max-width: 100%; 
-        padding: 20px;   
-    }
-}
-
 .skill-box h3 {
     color: #333;
     margin: 0;
